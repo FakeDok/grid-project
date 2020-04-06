@@ -1,0 +1,173 @@
+.contact{
+    padding: 100px 0px 100px 0px;
+    background-image: url(../img/christmas-contact.png);
+    background-size: cover;
+    &__column{
+        display: grid;
+        grid-template-columns: 294px 294px 500px;
+        grid-template-rows: 460px;
+        grid-column-gap: 26px;
+    }
+    &__left-column{
+        background-color: rgba(21,21,21,0.42);
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    &__right-column{
+        background-color: rgba(21,21,21,0.42);
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    &__input{
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 20px;
+        margin: 30px 30px 0px 30px;
+        color: white;
+    }
+    &__input::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+}
+.contact-left{
+    &__message{
+        padding-bottom: 80px;
+    }
+    &__send-message{
+        background-color: #6eeee4;
+        margin-top: 30px;
+        margin-left: 30px;
+        border: none;
+        width: 244px;
+        height: 53px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+}
+.contact-right{
+    &__discription{
+        text-align: start;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+        color: #ffffff;
+        padding-left: 30px;
+        padding-top: 35px;
+    }
+    &__map-up{
+        background-image: url(../img/map-up.png);
+        background-size: cover;
+        align-self: center;
+        width: 455px;
+        height: 224px;
+        margin-top: 40px;
+    }
+    &__map-back{
+        background-image: url(../img/map-back.png);
+        display: none;
+    }
+}
+@media(max-width:1024px){
+    .contact{
+        &__column{
+            display: grid;
+            grid-template-columns: 184px 184px 390px;
+            grid-template-rows: 460px;
+            grid-column-gap: 26px;
+        }
+    }
+    .contact-right{
+        &__map-up{
+            width: 355px;
+            height: 124px;
+        }
+    
+    }
+}
+@media(max-width:768px){
+    .contact{
+        padding: 20px 0px 20px 0px;
+        &__input{
+            font-size: 14px;
+            padding-bottom: 10px;
+            margin: 10px 10px 0px 30px;
+            color: white;
+        }
+        &__column{
+            display: grid;
+            grid-template-columns: 130px 130px 285px;
+            grid-template-rows: 280px;
+            grid-column-gap: 26px;
+        }
+    }
+    .contact-right{
+        &__map-up{
+            width: 265px;
+            height: 124px;
+            margin-top: 20px;
+        }
+        &__discription{
+            font-size: 12px;
+            padding-left: 10px;
+            padding-top: 15px;
+        }
+    }
+    .contact-left{
+        &__message{
+            padding-bottom: 40px;
+        }
+        &__send-message{
+            margin-top: 20px;
+            width: 224px;
+            height: 33px;
+            font-size: 14px;
+        }
+    }
+}
+@media(max-width:426px){
+    .contact{
+        &__column{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__left-column{
+        }
+        &__right-column{
+            margin-top: 20px;
+        }
+        &__input{
+            font-size: 10px;
+            margin: 10px 10px 0px 10px;
+        }
+    }
+    .contact-right{
+        &__map-up{
+            width: 205px;
+            height: 124px;
+            margin: 20px 0px 20px 0px;
+        }
+        &__discription{
+            font-size: 12px;
+            margin: 0px 60px 0px 10px;
+        }
+    }
+    .contact-left{
+        &__message{
+            padding-bottom: 40px;
+        }
+        &__send-message{
+            margin: 20px 90px 20px 10px;
+            width: 150px;
+            height: 33px;
+            font-size: 12px;
+        }
+    }
+    
+}

@@ -1,0 +1,68 @@
+.works{
+    padding: 100px 0px 100px 0px;
+    &__all-pictures{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 50px;
+    }
+    &__pictures{
+        width: 370px;
+        height: 359px;
+        background-size: cover;
+    }
+}
+.ice-cream{
+    background-image: url(../img/ice-cream.png);
+}
+.card{
+    background-image: url(../img/card.png);
+}
+.bottles{
+    background-image: url(../img/bottles.png);
+}
+.book{
+    background-image: url(../img/book.png);
+}
+.swing{
+    background-image: url(../img/swing.png);
+}
+.tea{
+    background-image: url(../img/tea.png);
+}
+@media(max-width:1024px){
+    .works{
+        &__pictures{
+            width: 230px;
+            height: 219px;
+        }
+    }
+}
+@media(max-width:768px){
+    .works{
+        padding: 20px 0px 20px 0px;
+        &__pictures{
+            width: 167px;
+            height: 160px;
+        }
+        &__all-pictures{
+            padding-top: 40px;
+            grid-gap: 30px;
+        }
+    }
+}
+@media(max-width:426px){
+    .works{
+        &__all-pictures{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__pictures{
+            width: 250px;
+            height: 240px;
+            margin-top: 20px;
+        }
+    }
+}

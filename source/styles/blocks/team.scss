@@ -1,0 +1,144 @@
+.team{
+    padding: 100px 0px 100px 0px;
+    &__all-pictures{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    &__picrures{
+        width: 370px;
+        height: 440px;
+        background-size: cover;
+    }
+}
+.women-glass{
+    background-image: url(../img/women-glass.png);
+}
+.men-black{
+    background-image: url(../img/men-black.png);
+    display: grid;
+    grid-template-columns: 18px 335px 17px;
+    grid-template-rows: 184px 241px 15px;
+}
+.men-black:hover .picture-content{
+    opacity: 1;
+}
+.men-t-shirt{
+    background-image: url(../img/men-t-shirt.png);
+}
+.men-shirt{
+    background-image: url(../img/men-shirt.png);
+}
+.women{
+    background-image: url(../img/women.png);
+}
+.picture-content{
+    opacity: 1;
+    background-color: #6df6eb;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: start;
+    padding: 40px 20px 20px 40px;
+    &__name{
+        font-size: 20px;
+        font-family: Merriweather;
+    }
+    &__profession{
+        font-size: 15px;
+        font-family: Merriweather;
+    }
+    &__discription{
+        font-family: Raleway;
+        font-size: 16px;
+        padding: 20px 0px 30px 0px;
+    }
+}
+@media(max-width:1024px){
+    .team{
+        &__picrures{
+            width: 240px;
+            height: 310px;
+        }
+    }
+    .men-black{
+        grid-template-columns: 18px 200px 17px;
+        grid-template-rows: 108px 190px 15px;
+    }
+    .picture-content{
+        padding: 20px 20px 20px 20px;
+        &__name{
+            font-size: 20px;
+        }
+        &__discription{
+            padding: 10px 0px 10px 0px;
+        }
+    }
+}
+@media(max-width:768px){
+    .team{
+        padding: 20px 0px 20px 0px;
+        &__picrures{
+            width: 180px;
+            height: 210px;
+        }
+        &__all-pictures{
+            padding-top: 40px;
+        }
+    }
+    .men-black {
+        grid-template-columns: 18px 145px 17px;
+        grid-template-rows: 75px 120px 15px;
+    }
+    .picture-content{
+        padding: 10px 10px 10px 10px;
+        &__name{
+            font-size: 14px;
+        }
+        &__profession{
+            font-size: 12px;
+        }
+        &__discription{
+            font-size: 10px;
+            padding: 5px 0px 5px 0px;
+        }
+    }
+}
+@media(max-width:426px){
+    .team{
+        &__all-pictures{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__picrures{
+            margin-top: 20px;
+            width: 180px;
+            height: 215px;
+        }
+    }
+    .men-black{
+        grid-template-columns: 18px 145px 17px;
+        grid-template-rows: 90px 110px 15px;
+    }
+    .picture-content{
+        opacity: 1;
+        padding: 5px 5px 5px 5px;
+        &__name{
+            font-size: 12px;
+            font-family: Merriweather;
+        }
+        &__profession{
+            font-size: 10px;
+            font-family: Merriweather;
+        }
+        &__discription{
+            font-family: Raleway;
+            font-size: 10px;
+            padding: 5px 0px 5px 0px;
+        }
+    }
+}

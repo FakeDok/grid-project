@@ -1,8 +1,78 @@
+@import 'blocks/header-navigation.scss';
 @import 'blocks/home-section.scss';
+@import 'blocks/about-us.scss';
+@import 'blocks/works.scss';
+@import 'blocks/services.scss';
+@import 'blocks/team.scss';
+@import 'blocks/testimonial.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/contact.scss';
+@import 'blocks/footer.scss';
 *{
   box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  text-align: center;
 }
 .container{
   margin: 0 auto;
   width: 80%;
+}
+h1{
+  font-size: 45px;
+  font-family: 'Montserrat',sans-serif;
+}
+h2{
+  font-size: 38px;
+  font-family: 'Montserrat',sans-serif;
+}
+h3{
+  font-size: 20px;
+  font-family: 'Merriweather',serif;
+}
+p{
+  font-size: 16px;
+  font-family: 'Raleway',sans-serif;
+}
+.subtitle{
+  font-size: 18px;
+  font-family: 'Merriweather',serif;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1.02px;
+}
+@media(max-width:768px){
+  h1{
+    font-size: 35px;
+  }
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .subtitle{
+    font-size: 14px;
+  }
+}
+@media(max-width:426px){
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 12px;
+  }
+  p{
+    font-size: 10px;
+  }
+  .subtitle{
+    font-size: 12px;
+  }
 }

@@ -1,12 +1,14 @@
 .home-section{
-    padding: 300px 0px 200px 0px;
+    padding: 150px 0px 100px 0px;
     background-color: #eff0f2;
     text-align: center;
-    &__title{
-        font-size: 45px;
-        padding-bottom: 150px;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__button{
+        margin-top: 100px;
         border: 3px solid;
         width: 232px;
         height: 53px;
@@ -14,13 +16,45 @@
         background: none;
     }
     &__picture{
+        align-self: flex-end;
         width: 121px;
         height: 156px;
         background-image: url("../img/home-section-button.png");
+        background-size: cover;
     }
 }
 .fon-blue{
     background-color: #76f4ea;
     padding: 0px 10px 0px 10px;
+}
+@media(max-width:768px){
+    .home-section{
+        padding: 120px 0px 20px 0px;
+        &__button{
+            margin-top: 0px;
+            border: 2px solid;
+            width: 222px;
+            height: 43px;
+            font-size: 16px;
+        }
+        &__picture{
+            width: 101px;
+            height: 136px;
+        }
+    }
+}
+@media(max-width:426px){
+    .home-section{
+        &__button{
+            border: 2px solid;
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+        }
+        &__picture{
+            width: 75px;
+            height: 90px;
+        }
+    }
 
 }

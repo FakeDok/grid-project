@@ -1,0 +1,29 @@
+.footer{
+    padding: 100px 0px 100px 0px;
+    background-color: #262b2e;
+    color: #ffffff;
+    &__follow{
+        opacity: 0.8;
+    }
+    &__discription{
+        opacity: 0.4;
+    }
+    &__network{
+        display: flex;
+        justify-content: center;
+    }
+    &__network-icon{
+        margin: 5px;
+        background-color: #8d8d8d;
+        width: 46px;
+        height: 40px;
+    }
+    &__network-icon:hover{
+        background-color: #71f6eb;
+    }
+}
+@media(max-width:768px){
+    .footer{
+    padding: 20px 0px 20px 0px;
+    }
+}

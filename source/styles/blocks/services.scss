@@ -1,0 +1,167 @@
+.services{
+    padding: 100px 0px 100px 0px;
+    background-color: #f9fbfb;
+    &__all-most{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        text-align: start;
+    }
+}
+.most{
+    &__love-for{
+        background-color: #6df6eb;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    &__cool-psd{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/cool-psd.png);
+        background-size: cover;
+    }
+    &__designing{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/designing.png);
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    &__html-kori{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/html-kori.png);
+        background-size: cover;
+    }
+    &__psd-design{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/psd-design.png);
+        background-size: cover;
+    }
+    &__cool-for{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/cool-for.png);
+        background-size: cover;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    &__button{
+        background: none;
+        border: none;
+        font-size: 18px;
+        font-family: Raleway;
+        color: #f9fbfb;
+        margin-left: 66px;
+        margin-bottom: 60px;
+    }
+    &__title{
+        padding: 160px 60px 27px 66px;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: Merriweather;
+    }
+    &__subtitle{
+        font-size: 16px;
+        font-family: Raleway;
+        color: #ffffff;
+        padding: 0px 60px 53px 66px;
+    }
+}
+.love-for{
+    &__title{
+        font-size: 20px;
+        font-family: Merriweather;
+        padding: 63px 0px 0px 68px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        font-family: Raleway;
+        padding: 38px 116px 75px 68px;
+    }
+    &__button{
+        background: none;
+        border: none;
+        margin: 0px 0px 56px 68px;
+    }
+}
+@media(max-width:768px){
+    .services{
+        padding: 20px 0px 20px 0px;
+        &__all-most{
+            padding-top: 40px;
+            grid-gap: 10px;
+            
+        }
+    }
+    .most{
+        &__button{
+            font-size: 14px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        &__title{
+            padding: 70px 60px 15px 30px;
+            font-size: 16px;
+        }
+        &__subtitle{
+            font-size: 12px;
+            padding: 0px 60px 20px 30px;
+        }
+    }
+    .love-for{
+        &__title{
+            font-size: 16px;
+            padding: 30px 0px 0px 30px;
+        }
+        &__subtitle{
+            font-size: 12px;
+            padding: 20px 116px 20px 30px;
+        }
+        &__button{
+            margin: 0px 0px 0px 30px;
+        }
+    }
+}
+
+@media(max-width:426px){
+    .services{
+        &__all-most{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0px;
+        }
+        &__most{
+            margin-top: 20px;
+        }
+    }
+    .most{
+        &__button{
+            font-size: 14px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        &__title{
+            padding: 70px 60px 15px 30px;
+            font-size: 16px;
+        }
+        &__subtitle{
+            font-size: 12px;
+            padding: 0px 10px 20px 30px;
+        }
+    }
+    .love-for{
+        &__title{
+            font-size: 16px;
+            padding: 30px 0px 0px 30px;
+        }
+        &__subtitle{
+            font-size: 12px;
+            padding: 20px 10px 20px 30px;
+        }
+        &__button{
+            margin: 0px 0px 10px 30px;
+        }
+    }
+}

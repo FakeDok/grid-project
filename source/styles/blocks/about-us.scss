@@ -1,0 +1,125 @@
+.about-us{
+    background-color: #f8fafa;
+    padding: 150px 0px 100px 0px;
+    &__column{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__column-left{
+        display: grid;
+        grid-template-rows: 35px 483px 35px;
+        grid-template-columns: 44px 392px 44px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    &__column-right{
+        text-align: start;
+        padding-left: 150px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    &__icon{
+        background-color: #d0d0d0;
+        width: 11px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 3px;
+    }
+    &__icon:hover{
+        background-color: #71f6eb;
+    }
+}
+.about-us-column-left{
+    &__picture{
+        z-index: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 392px;
+        height: 483px;
+        background-image: url(../img/desktop.png);
+        background-size: cover;
+    }
+    &__picture-fon{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 479px;
+        height: 412px;
+        background-color: #eff0f2;
+    }
+    &__progress{
+        display: flex;
+        justify-content: center;
+        grid-row-start: 3;
+        grid-column-start: 2;
+   }
+}
+@media(max-width:1024px){
+    .about-us{
+        &__column-left{
+            grid-template-rows: 35px 383px 35px;
+            grid-template-columns: 44px 292px 44px;
+        }
+    }
+    .about-us-column-left{
+        &__picture{
+            width: 292px;
+            height: 383px;
+        }
+        &__picture-fon{
+            width: 379px;
+            height: 312px;
+        }
+    }
+}
+@media(max-width:768px){
+    .about-us{
+        padding: 20px 0px 20px 0px;
+        &__column-left{
+            grid-template-rows: 25px 170px 25px;
+            grid-template-columns: 10px 165px 10px;
+        }
+        &__column-right{
+            padding-left: 10px;
+        }
+        &__column{
+            padding-top: 40px;
+        }
+    }
+    .about-us-column-left{
+        &__picture{
+            width: 165px;
+            height: 195px;
+        }
+        &__picture-fon{
+            width: 185px;
+            height: 145px;
+        }
+        
+    }
+}
+@media(max-width:426px){
+    .about-us{
+        &__column{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__column-right{
+            padding-left: 0px;
+            padding-top: 10px;
+        }
+        &__column{
+            padding-top: 20px;
+        }
+    }
+    .about-us-column-left{
+        &__progress{
+            padding-top: 10px;
+        }
+    }
+}
