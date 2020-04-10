@@ -13,7 +13,7 @@
         justify-content: center;
     }
     &__network-icon{
-        margin: 5px;
+        margin: 5;
         background-color: #8d8d8d;
         width: 46px;
         height: 40px;
@@ -21,6 +21,18 @@
     &__network-icon:hover{
         background-color: #71f6eb;
     }
+}
+.footer-network__pinterest{
+
+}
+.footer-network__twitter{
+
+}
+.footer-network__facebook{
+
+}
+.footer-network__web-site{
+
 }
 @media(max-width:768px){
     .footer{

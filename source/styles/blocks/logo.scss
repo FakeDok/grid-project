@@ -1,3 +1,8 @@
 .logo{
-    padding: 100px 0px 100px 0px;
+    padding: 50px;
+    &__all-pictures{
+        padding: 100px 0px ;
+        background-image: url(../img/logo.png);
+        background-repeat: round;
+    }
 }

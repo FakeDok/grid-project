@@ -9,11 +9,15 @@
     }
     &__button{
         margin-top: 100px;
-        border: 3px solid;
+        border: none;
         width: 232px;
         height: 53px;
         font-size: 18px;
         background: none;
+    }
+    &__button:hover{
+        border: 3px solid;
+        background-color: aqua;
     }
     &__picture{
         align-self: flex-end;

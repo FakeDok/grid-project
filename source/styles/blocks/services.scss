@@ -9,10 +9,18 @@
         grid-gap: 20px;
         text-align: start;
     }
+    &__most{
+        background-size: cover;
+        color: #ffffff;
+    }
+    &__most:hover{
+        background-image: linear-gradient( rgb(0, 255, 221));
+        color: #000000;
+    }
 }
 .most{
     &__love-for{
-        background-color: #6df6eb;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/tea.png);
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -20,11 +28,9 @@
     }
     &__cool-psd{
         background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/cool-psd.png);
-        background-size: cover;
     }
     &__designing{
         background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/designing.png);
-        background-size: cover;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
@@ -32,15 +38,12 @@
     }
     &__html-kori{
         background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/html-kori.png);
-        background-size: cover;
     }
     &__psd-design{
         background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/psd-design.png);
-        background-size: cover;
     }
     &__cool-for{
         background-image: linear-gradient( rgba(0, 0, 0, 0.6)), url(../img/cool-for.png);
-        background-size: cover;
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 3;
@@ -50,39 +53,23 @@
         background: none;
         border: none;
         font-size: 18px;
-        font-family: Raleway;
         color: #f9fbfb;
+        font-family: Raleway;
         margin-left: 66px;
         margin-bottom: 60px;
+    }
+    &__button:hover{
+        color: #000000;
     }
     &__title{
         padding: 160px 60px 27px 66px;
         font-size: 20px;
-        color: #ffffff;
         font-family: Merriweather;
     }
     &__subtitle{
         font-size: 16px;
         font-family: Raleway;
-        color: #ffffff;
         padding: 0px 60px 53px 66px;
-    }
-}
-.love-for{
-    &__title{
-        font-size: 20px;
-        font-family: Merriweather;
-        padding: 63px 0px 0px 68px;
-    }
-    &__subtitle{
-        font-size: 16px;
-        font-family: Raleway;
-        padding: 38px 116px 75px 68px;
-    }
-    &__button{
-        background: none;
-        border: none;
-        margin: 0px 0px 56px 68px;
     }
 }
 @media(max-width:768px){

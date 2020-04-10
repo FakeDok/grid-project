@@ -16,33 +16,40 @@
 .women-glass{
     background-image: url(../img/women-glass.png);
 }
+.women-glass:hover .picture-content{
+    opacity: 1;
+}
 .men-black{
     background-image: url(../img/men-black.png);
-    display: grid;
-    grid-template-columns: 18px 335px 17px;
-    grid-template-rows: 184px 241px 15px;
 }
 .men-black:hover .picture-content{
     opacity: 1;
 }
+
 .men-t-shirt{
     background-image: url(../img/men-t-shirt.png);
+}
+.men-t-shirt:hover .picture-content{
+    opacity: 1;
 }
 .men-shirt{
     background-image: url(../img/men-shirt.png);
 }
+.men-shirt:hover .picture-content{
+    opacity: 1;
+}
 .women{
     background-image: url(../img/women.png);
 }
-.picture-content{
+.women:hover .picture-content{
     opacity: 1;
+}
+.picture-content{
+    opacity: 0;
     background-color: #6df6eb;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    margin: 210px 20px 20px;
     text-align: start;
-    padding: 40px 20px 20px 40px;
+    padding: 40px 20px 20px 30px;
     &__name{
         font-size: 20px;
         font-family: Merriweather;
